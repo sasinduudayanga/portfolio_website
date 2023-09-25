@@ -18,7 +18,7 @@ import js1 from "../assets/certificates/js1.jpg";
 import jira1 from "../assets/certificates/jira1.jpg";
 import oop1 from "../assets/certificates/oop1.jpg";
 // import aws1 from "../assets/certificates/aws1.jpg";
-// import other1 from "../assets/certificates/other1.png";
+import other1 from "../assets/certificates/other1.jpg";
 
 const Certification = () => {
   const [selectedCategory, setSelectedCategory] = useState("web"); // Default category is "all"
@@ -145,7 +145,7 @@ const Certification = () => {
     },
     {
       id: 18,
-    //   src: aws1,
+        src: other1,
       // title: "Canva",
       // style: "shadow-green-500",
       category: "other",
@@ -190,7 +190,7 @@ const Certification = () => {
           >
             Web Development
           </button>
-          <button
+          {/* <button
             onClick={() => setSelectedCategory("sql")}
             className={`${
               selectedCategory === "sql"
@@ -199,7 +199,7 @@ const Certification = () => {
             } hover:bg-gray-800 px-4 py-1 text-sm w-[16%] rounded-lg`}
           >
             SQL
-          </button>
+          </button> */}
           <button
             onClick={() => setSelectedCategory("html")}
             className={`${
