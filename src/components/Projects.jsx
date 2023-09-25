@@ -24,8 +24,8 @@ import f4 from "../assets/projects/fineArt/fineart_4.jpg";
 import t1 from "../assets/projects/todo/todo_1.jpg";
 import t2 from "../assets/projects/todo/todo_2.jpg"; 
 //import kotlin cal images
-import c1 from "../assets/projects/cal_kotlin/cal-1.png"
-import c2 from "../assets/projects/cal_kotlin/cal-2.png"
+// import c1 from "../assets/projects/cal_kotlin/cal-1.png"
+// import c2 from "../assets/projects/cal_kotlin/cal-2.png"
 
 Modal.setAppElement("#root");
 
