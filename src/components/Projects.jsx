@@ -15,6 +15,17 @@ import e2 from "../assets/projects/edugo/e2.png";
 import e3 from "../assets/projects/edugo/e3.png";
 import e4 from "../assets/projects/edugo/e4.png";
 import e5 from "../assets/projects/edugo/e5.png";
+// import fine art images
+import f1 from "../assets/projects/fineArt/fineart_1.jpg"; 
+import f2 from "../assets/projects/fineArt/fineart_2.jpg"; 
+import f3 from "../assets/projects/fineArt/fineart_3.jpg"; 
+import f4 from "../assets/projects/fineArt/fineart_4.jpg";
+//import todo app images
+import t1 from "../assets/projects/todo/todo_1.jpg";
+import t2 from "../assets/projects/todo/todo_2.jpg"; 
+//import kotlin cal images
+import c1 from "../assets/projects/cal_kotlin/cal-1.png"
+import c2 from "../assets/projects/cal_kotlin/cal-2.png"
 
 Modal.setAppElement("#root");
 
@@ -34,28 +45,28 @@ const Projects = () => {
     },
     {
       id: 3,
-      src: k1,
+      src: f1,
       githubLink: "https://github.com/your-repo-url-1",
-      demoImages: [k1, k2, k3, k4, k5, k6],
+      demoImages: [f1, f2, f3, f4],
     },
     {
       id: 4,
-      src: k1,
+      src: t1,
       githubLink: "https://github.com/your-repo-url-1",
-      demoImages: [k1, k2, k3, k4, k5, k6],
+      demoImages: [t1, t2],
     },
-    {
-      id: 5,
-      src: k1,
-      githubLink: "https://github.com/your-repo-url-1",
-      demoImages: [k1, k2, k3, k4, k5, k6],
-    },
-    {
-      id: 6,
-      src: k1,
-      githubLink: "https://github.com/your-repo-url-1",
-      demoImages: [k1, k2, k3, k4, k5, k6],
-    },
+    // {
+    //   id: 5,
+    //   src: c1,
+    //   githubLink: "https://github.com/your-repo-url-1",
+    //   demoImages: [c1, c2],
+    // },
+    // {
+    //   id: 6,
+    //   src: k1,
+    //   githubLink: "https://github.com/your-repo-url-1",
+    //   demoImages: [k1, k2, k3, k4, k5, k6],
+    // },
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);
