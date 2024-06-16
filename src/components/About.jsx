@@ -24,8 +24,7 @@ const About = () => {
         <p className="text-xl">
           I chase new technologies and eager to designing and building software
           applications. Full stack development, Frontend development, Backend
-          development, Mobile application development, Ui/Ux designing and
-          Software quality assurance are my skilled areas.
+          development, Mobile application development and Ui/Ux designing are my skilled areas.
         </p>
       </div>
     </div>

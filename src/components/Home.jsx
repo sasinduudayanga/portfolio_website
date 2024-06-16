@@ -16,8 +16,7 @@ const Home = () => {
           <p className="text-gray-500 py-4 max-w-md">
             I chase new technologies and eager to designing and building
             applications. Frontend development, Backend development, Mobile
-            application development, Ui/Ux designing and Software quality
-            assurance are my skilled areas.
+            application development and Ui/Ux designing are my skilled areas.
           </p>
 
           <div>
