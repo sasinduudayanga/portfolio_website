@@ -13,7 +13,7 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20 ">
-          I am Sasindu Udayanga, a recent graduate from the University of
+          I am Sasindu Udayanga, a graduate from the University of
           Colombo School of Computing with a BSc in Computer Science. I’m a
           motivated and innovative individual who embraces challenges and
           constantly seeks to learn and improve. I am passionate about
