@@ -14,9 +14,13 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I chase new technologies and eager to designing and building
-            applications. Frontend development, Backend development, Mobile
-            application development and Ui/Ux designing are my skilled areas.
+            I’m a passionate software developer with a relentless drive to
+            learn, evolve, and embrace new challenges. Every day is an
+            opportunity to grow and contribute, and I thrive in collaborative
+            settings where I can leverage my skills to create impactful, robust
+            software solutions. I’m dedicated to delivering excellence in every
+            project I’m part of, with a focus on building solutions that truly
+            make a difference.
           </p>
 
           <div>

@@ -13,18 +13,21 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20 ">
-          I am Sasindu Udayanga who is an current undergraduate of University of
-          Colombo School of Computing reading for Bsc. Computer Science. I'm a
-          motivated, innovative person who accept challenges and willing to
-          improve and learn more. I am and prefer problem-solving, designing,
-          and programming. I also have a strong feeling of empathy and
-          cooperation also.
+          I am Sasindu Udayanga, a recent graduate from the University of
+          Colombo School of Computing with a BSc in Computer Science. I’m a
+          motivated and innovative individual who embraces challenges and
+          constantly seeks to learn and improve. I am passionate about
+          problem-solving, designing, and programming, with a strong sense of
+          empathy and a commitment to collaboration.
         </p>
         <br />
         <p className="text-xl">
-          I chase new technologies and eager to designing and building software
-          applications. Full stack development, Frontend development, Backend
-          development, Mobile application development and Ui/Ux designing are my skilled areas.
+          I’m a passionate software developer with a relentless drive to learn,
+          evolve, and embrace new challenges. Every day is an opportunity to
+          grow and contribute, and I thrive in collaborative settings where I
+          can leverage my skills to create impactful, robust software solutions.
+          I’m dedicated to delivering excellence in every project I’m part of,
+          with a focus on building solutions that truly make a difference.
         </p>
       </div>
     </div>
