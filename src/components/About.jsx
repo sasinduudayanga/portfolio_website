@@ -13,21 +13,22 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20 ">
-          I am Sasindu Udayanga, a graduate from the University of
-          Colombo School of Computing with a BSc in Computer Science. I’m a
-          motivated and innovative individual who embraces challenges and
-          constantly seeks to learn and improve. I am passionate about
-          problem-solving, designing, and programming, with a strong sense of
-          empathy and a commitment to collaboration.
+          I'm Sasindu Udayanga, a Software Engineer with over 2 years of
+          experience in developing scalable web applications and enterprise
+          software solutions. I graduated with a BSc in Computer Science from
+          the University of Colombo School of Computing. Currently, I work as a
+          Full Stack Software Engineer at Altura X, where I contribute to both
+          frontend and backend development, building reliable applications and
+          implementing new features using modern technologies.
         </p>
         <br />
         <p className="text-xl">
-          I’m a passionate software developer with a relentless drive to learn,
-          evolve, and embrace new challenges. Every day is an opportunity to
-          grow and contribute, and I thrive in collaborative settings where I
-          can leverage my skills to create impactful, robust software solutions.
-          I’m dedicated to delivering excellence in every project I’m part of,
-          with a focus on building solutions that truly make a difference.
+          My technical expertise includes React.js, TypeScript, JavaScript,
+          Golang, Java, and Spring Boot. I have hands-on experience with
+          REST APIs, GraphQL, database management using MySQL and PostgreSQL,
+          and database schema versioning with Liquibase. I also work with AWS
+          services and Docker, and I value writing clean, maintainable code
+          supported by unit and integration tests.
         </p>
       </div>
     </div>

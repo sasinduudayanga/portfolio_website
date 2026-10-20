@@ -14,13 +14,13 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I’m a passionate software developer with a relentless drive to
-            learn, evolve, and embrace new challenges. Every day is an
-            opportunity to grow and contribute, and I thrive in collaborative
-            settings where I can leverage my skills to create impactful, robust
-            software solutions. I’m dedicated to delivering excellence in every
-            project I’m part of, with a focus on building solutions that truly
-            make a difference.
+            Software Engineer with 2+ years of experience building scalable
+            web applications and enterprise software solutions. Experienced
+            in React.js, TypeScript, Golang, Java, and Spring Boot, with
+            hands-on experience in API development, database management,
+            and AWS cloud services. Passionate about solving complex problems,
+            learning new technologies, and building reliable software that
+            makes a difference.
           </p>
 
           <div>

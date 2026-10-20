@@ -1,184 +1,65 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 import html from "../assets/logos/html.png";
 import css from "../assets/logos/css.png";
 import js from "../assets/logos/js.png";
-import php from "../assets/logos/php.png";
 import react from "../assets/logos/react.png";
 import node from "../assets/logos/Node JS.png";
 import tailwind from "../assets/logos/Tailwind CSS.png";
 import mysql from "../assets/logos/mysql.png";
-import mongo from "../assets/logos/mongo.png";
 import postgres from "../assets/logos/postgres.png";
 import java from "../assets/logos/java.png";
-import python from "../assets/logos/Python.png";
 import postman from "../assets/logos/postman.png";
-import flutter from "../assets/logos/Flutter.png";
-
-import canva from "../assets/logos/canva.png";
-import figma from "../assets/logos/Figma.png";
 import github from "../assets/logos/github.png";
 import jira from "../assets/logos/Jira.png";
-import phpmyadmin from "../assets/logos/phpmyadmin.png";
-import mysqlworkbench from "../assets/logos/mysqlworkbench.png";
 
+// Use text-based icons for technologies without existing image assets.
 const Skills = () => {
-  const [selectedCategory, setSelectedCategory] = useState("web development"); // Default category is "all"
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   const techs = [
-    {
-      id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
-      category: "web development",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS",
-      style: "shadow-blue-500",
-      category: "web development",
-    },
-    {
-      id: 3,
-      src: js,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-      category: "web development",
-    },
-    {
-      id: 4,
-      src: php,
-      title: "PHP",
-      style: "shadow-gray-500",
-      category: "programming languages",
-    },
-    {
-      id: 5,
-      src: react,
-      title: "React",
-      style: "shadow-blue-600",
-      category: "web development",
-    },
-    {
-      id: 6,
-      src: tailwind,
-      title: "TailwindCss",
-      style: "shadow-sky-400",
-      ccategory: "web development",
-    },
-    {
-      id: 7,
-      src: node,
-      title: "NodeJs",
-      style: "shadow-green-500",
-      category: "web development",
-    },
-    {
-      id: 8,
-      src: java,
-      title: "Java",
-      style: "shadow-red-500",
-      category: "programming languages",
-    },
-    {
-      id: 9,
-      src: python,
-      title: "Python",
-      style: "shadow-yellow-500",
-      category: "programming languages",
-    },
-    {
-      id: 10,
-      src: mysql,
-      title: "MySQL",
-      style: "shadow-blue-500",
-      category: "database",
-    },
-    {
-      id: 11,
-      src: mongo,
-      title: "MongoDB",
-      style: "shadow-green-500",
-      category: "database",
-    },
-    {
-      id: 12,
-      src: postgres,
-      title: "PostgreSQL",
-      style: "shadow-gray-500",
-      category: "database",
-    },
+    // Frontend
+    { id: 1, title: "React.js", src: react, category: "frontend", style: "shadow-cyan-500" },
+    { id: 2, title: "TypeScript", category: "frontend", icon: "TS", style: "shadow-blue-500" },
+    { id: 3, title: "JavaScript", src: js, category: "frontend", style: "shadow-yellow-500" },
+    { id: 4, title: "HTML5", src: html, category: "frontend", style: "shadow-orange-500" },
+    { id: 5, title: "CSS3", src: css, category: "frontend", style: "shadow-blue-400" },
+    { id: 6, title: "Tailwind CSS", src: tailwind, category: "frontend", style: "shadow-cyan-400" },
 
-    {
-      id: 13,
-      src: flutter,
-      title: "Flutter",
-      style: "shadow-sky-500",
-      category: "mobile development",
-    },
-    {
-      id: 14,
-      src: postman,
-      title: "Postman",
-      style: "shadow-gray-500",
-      ccategory: "web development",
-    },
-    {
-      id: 15,
-      src: canva,
-      title: "Canva",
-      style: "shadow-green-500",
-      category: "tools",
-    },
-    {
-      id: 16,
-      src: figma,
-      title: "Figma",
-      style: "shadow-sky-500",
-      category: "tools",
-    },
-    {
-      id: 17,
-      src: github,
-      title: "Githib",
-      style: "shadow-gray-500",
-      category: "project management",
-    },
-    {
-      id: 18,
-      src: jira,
-      title: "Jira",
-      style: "shadow-green-500",
-      category: "project management",
-    },
-    {
-      id: 19,
-      src: postgres,
-      title: "pgAdmin",
-      style: "shadow-sky-500",
-      category: "database",
-    },
-    {
-      id: 20,
-      src: phpmyadmin,
-      title: "phpMyAdmin",
-      style: "shadow-sky-500",
-      category: "database",
-    },
+    // Backend
+    { id: 7, title: "Golang", category: "backend", icon: "Go", style: "shadow-cyan-500" },
+    { id: 8, title: "Java", src: java, category: "backend", style: "shadow-red-500" },
+    { id: 9, title: "Spring Boot", category: "backend", icon: "SB", style: "shadow-green-500" },
+    { id: 10, title: "Node.js", src: node, category: "backend", style: "shadow-green-500" },
+    { id: 11, title: "GraphQL", category: "backend", icon: "GQL", style: "shadow-pink-500" },
+    { id: 12, title: "REST APIs", category: "backend", icon: "API", style: "shadow-purple-500" },
 
-    {
-      id: 21,
-      src: mysqlworkbench,
-      title: "MySql Workbench",
-      style: "shadow-sky-500",
-      category: "database",
-    },
+    // Databases
+    { id: 13, title: "MySQL", src: mysql, category: "database", style: "shadow-blue-500" },
+    { id: 14, title: "PostgreSQL", src: postgres, category: "database", style: "shadow-sky-500" },
+    { id: 15, title: "H2 Database", category: "database", icon: "H2", style: "shadow-orange-500" },
+    { id: 16, title: "JPA", category: "database", icon: "JPA", style: "shadow-red-400" },
+    { id: 17, title: "Liquibase", category: "database", icon: "LB", style: "shadow-green-400" },
+
+    // Cloud and DevOps
+    { id: 18, title: "AWS", category: "cloud", icon: "AWS", style: "shadow-orange-500" },
+    { id: 19, title: "Docker", category: "cloud", icon: "DK", style: "shadow-blue-500" },
+
+    // Development tools
+    { id: 20, title: "GitHub", src: github, category: "tools", style: "shadow-gray-400" },
+    { id: 21, title: "Postman", src: postman, category: "tools", style: "shadow-orange-500" },
+    { id: 22, title: "Jira", src: jira, category: "tools", style: "shadow-blue-500" },
   ];
 
-  // Filter technologies based on the selected category
+  const categories = [
+    { label: "All", value: "all" },
+    { label: "Frontend", value: "frontend" },
+    { label: "Backend", value: "backend" },
+    { label: "Database", value: "database" },
+    { label: "Cloud & DevOps", value: "cloud" },
+    { label: "Tools", value: "tools" },
+  ];
+
   const filteredTechs =
     selectedCategory === "all"
       ? techs
@@ -187,94 +68,55 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="min-h-screen w-full bg-gradient-to-b from-gray-800 to-black text-white"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="max-w-screen-lg mx-auto p-4 py-20 flex flex-col justify-center">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Skills
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            Technical Skills
           </p>
-          <p className="py-6">These are the technologies i've worked with</p>
+          <p className="py-6 text-gray-300">
+            Technologies and tools I use to build reliable, scalable
+            applications.
+          </p>
         </div>
 
-        <div className="flex space-x-4 mt-10 mb-10">
-          {/* <button
-            onClick={() => setSelectedCategory("all")}
-            className={`${
-              selectedCategory === "all" ? "bg-blue-500" : "bg-gray-500"
-            } hover:bg-blue-600 px-4 py-2 rounded-lg`}
-          >
-            All
-          </button> */}
-          <button
-            onClick={() => setSelectedCategory("web development")}
-            className={`${
-              selectedCategory === "web development"
-                ? "bg-blue-500"
-                : "bg-gray-500"
-            } hover:bg-blue-600 px-4 py-1 text-sm w-[16%] rounded-lg`}
-          >
-            Web Development
-          </button>
-          <button
-            onClick={() => setSelectedCategory("programming languages")}
-            className={`${
-              selectedCategory === "programming languages"
-                ? "bg-blue-500"
-                : "bg-gray-500"
-            } hover:bg-blue-600 px-4 py-1 text-sm w-[16%] rounded-lg`}
-          >
-            Programming Languages
-          </button>
-          <button
-            onClick={() => setSelectedCategory("database")}
-            className={`${
-              selectedCategory === "database" ? "bg-blue-500" : "bg-gray-500"
-            } hover:bg-blue-600 px-4 py-1 text-sm w-[16%] rounded-lg`}
-          >
-            Database
-          </button>
-
-          <button
-            onClick={() => setSelectedCategory("project management")}
-            className={`${
-              selectedCategory === "project management"
-                ? "bg-blue-500"
-                : "bg-gray-500"
-            } hover:bg-blue-600 px-4 py-1 text-sm w-[16%] rounded-lg`}
-          >
-            Project Management
-          </button>
-          <button
-            onClick={() => setSelectedCategory("mobile development")}
-            className={`${
-              selectedCategory === "mobile development"
-                ? "bg-blue-500"
-                : "bg-gray-500"
-            } hover:bg-blue-600 px-4 py-1 text-sm w-[16%] rounded-lg`}
-          >
-            Mobile Development
-          </button>
-          <button
-            onClick={() => setSelectedCategory("tools")}
-            className={`${
-              selectedCategory === "tools" ? "bg-blue-500" : "bg-gray-500"
-            } hover:bg-blue-600 px-4 py-1 text-sm w-[16%] rounded-lg`}
-          >
-            Designing Tools
-          </button>
-
-          {/* Add buttons for other categories here */}
+        <div className="flex flex-wrap gap-3 mt-6 mb-8">
+          {categories.map(({ label, value }) => (
+            <button
+              key={value}
+              onClick={() => setSelectedCategory(value)}
+              className={`px-4 py-2 text-sm rounded-lg transition-colors duration-300 ${
+                selectedCategory === value
+                  ? "bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
+                  : "bg-gray-700 hover:bg-gray-600 text-gray-200"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {filteredTechs.map(({ id, src, title, style }) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+          {filteredTechs.map(({ id, src, title, icon, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`flex flex-col items-center justify-center min-h-[8rem] p-4 rounded-lg bg-gray-900 shadow-md ${style} hover:scale-105 transition-transform duration-300`}
             >
-              <img src={src} alt="" className="w-20 text-xs mx-auto" />
-              <p className="mt-4">{title}</p>
+              {src ? (
+                <img
+                  src={src}
+                  alt={title}
+                  loading="lazy"
+                  className="w-16 h-16 object-contain"
+                />
+              ) : (
+                <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gray-800 border border-gray-700 text-cyan-400 font-bold text-lg">
+                  {icon}
+                </div>
+              )}
+
+              <p className="mt-3 font-medium">{title}</p>
             </div>
           ))}
         </div>
